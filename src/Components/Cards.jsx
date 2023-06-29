@@ -4,8 +4,8 @@ const Cards = () => {
   return (
     <div className="flex w-full md:flex-row flex-col items-center justify-center gap-2">
       {/* Card 1-Left */}
-      <div className="flex items-center md:w-1/2 w-full flex-col border rounded-md p-3 gap-2">
-        <div className="flex flex-row justify-between w-full items-center">
+      <div className="flex items-center bg-white shadow-2xl md:w-1/2 w-full flex-col border rounded-md p-3 gap-2">
+        <div className="flex flex-row  py-4 justify-between w-full items-center">
           <div className="flex flex-col w-fit items-center">
             <div className="flex flex-row items-center w-full gap-2">
               <h1 className=" font-bold">Basic Plan</h1>
@@ -30,10 +30,13 @@ const Cards = () => {
           </div>
         </div>
         <div className="flex flex-row items-center justify-between w-full">
-          <div className="flex flex-row rounded-full overflow-hidden">
+          <div className="flex flex-row overflow-hidden pb-3">
             {Images.map((img)=>(
-                <img key={img.id} src={img.url} className=" h-12 w-12 object-cover rounded-full"/>
+                <img key={img.id} src={img.url} className=" h-10 w-10 object-cover rounded-full"/>
             ))}
+            <button className=" h-10 w-10 border-dashed items-center flex rounded-full justify-center border-2">
+                <span className=" text-lg text-gray-500">+</span>
+            </button>
           </div>
           <div>
             <p className=" text-sm text-gray-600 font-bold">10 of 15 users</p>
@@ -41,9 +44,9 @@ const Cards = () => {
         </div>
         <a
           href="#"
-          className="flex border-t-[1px] flex-row items-center pt-3 justify-end w-full"
+          className="flex border-t-[1.5px] flex-row items-center py-3 justify-end w-full"
         >
-          <div className="flex flex-row border font-bold items-center text-sm p-1 rounded-md">
+          <div className="flex flex-row border-[1.5px] font-bold items-center text-sm px-2 py-1 rounded-md">
             <span>Upgrade plan</span>
             <svg
               fill="currentColor"
@@ -61,14 +64,14 @@ const Cards = () => {
       </div>
 
       {/* Card 2-Left */}
-      <div className="flex flex-col items-center md:w-1/2 w-full border p-3 rounded-md">
-        <div className="flex w-full flex-col justify-start">
+      <div className="flex bg-white shadow-2xl flex-col items-center md:w-1/2 w-full border p-3 rounded-md">
+        <div className="flex w-full flex-col py-4 justify-start">
           <h1 className=" font-bold">Payment method</h1>
           <p className=" text-sm text-gray-600">
             Change how you pay for your plan
           </p>
         </div>
-        <div className="flex flex-row justify-between rounded-md w-full items-center border py-3 px-3">
+        <div className="flex flex-row justify-between rounded-md w-full items-center border-[1.5px] mb-4 py-3 px-3">
           <div className="flex flex-row gap-3 text-sm">
             <div className="flex items-center h-fit bg-white border px-1 rounded-md">
               <svg
