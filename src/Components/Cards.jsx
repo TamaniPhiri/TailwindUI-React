@@ -64,7 +64,7 @@ const Cards = () => {
       </div>
 
       {/* Card 2-Left */}
-      <div className="flex bg-white shadow-2xl flex-col items-center md:w-1/2 w-full border p-3 rounded-md">
+      <div className="flex bg-white shadow-2xl flex-col items-center md:w-1/2 w-full border px-3 py-4 rounded-md">
         <div className="flex w-full flex-col py-4 justify-start">
           <h1 className=" font-bold">Payment method</h1>
           <p className=" text-sm text-gray-600">

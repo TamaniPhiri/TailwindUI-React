@@ -1,4 +1,4 @@
-export const Table = [
+export const TableData = [
     {
       id: Math.random().toString(4),
       invoiceName: "Invoice #01-Dec 2022",
